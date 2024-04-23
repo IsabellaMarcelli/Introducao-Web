@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula sobre formulários - 6º</title>  <!--opção de sexo errado pra ver como ficaria-->
+    </head>
+
+    <body>
+        <form>
+            <fieldset id="cadastro"> 
+
+                <legend>Matricular aluno</legend>
+
+                <div>
+                    <label for="txtNome">Nome:</label>    <!--cursor vai pra caixa-->
+                    <input type="text" 
+                           name="nNome"
+                           id="txtNome" 
+                           size="40" 
+                           maxlength="50"
+                           placeholder="Digite seu nome">
+                </div>
+
+                <div>eMail:
+                    <input type="email"
+                    name="nEmail"
+                    id="txtEmail"
+                    size="20"
+                    placeholder="Digite seu email">
+                </div>
+
+                <div>Idade:
+                    <input type="number"
+                    min="15"
+                    max="40"
+                    placeholder="Idade entre 15 e 40">
+                </div>
+
+                <div>Data de Nascimento:
+                    <input type="date">
+                </div>
+
+                <div>Sexo: 
+                    <input type="radio" 
+                           name="nMasc" 
+                           id="radioMasc"
+                           value="M">Masculino
+
+                    <input type="radio" 
+                           name="nFem"
+                           id="radioFem"
+                           value="F">Feminino
+
+                </div>
+                <div>Estado:</div>
+                <div>Cidade:</div>
+                <div>Fale sobre você:</div>
+                <div>Cor da camiseta:</div>
+                <div>Nível de conhecimento de inglês: baixo alto</div>
+                <div>Quero receber emails com notícias</div>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
+

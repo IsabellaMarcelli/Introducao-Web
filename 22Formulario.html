@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula sobre formulários - 22º</title>     <!--imagem como botão-->
+    </head>
+
+    <body>
+        <form>
+            <fieldset id="cadastro"> 
+
+                <legend>Matricular aluno</legend>
+
+                <div>
+                    <label for="txtNome">Nome:</label>    
+                    <input type="text" 
+                           name="nNome"
+                           id="txtNome" 
+                           size="40" 
+                           maxlength="50"
+                           placeholder="Digite seu nome">
+                </div>
+
+                <div>eMail:
+                    <input type="email"
+                    name="nEmail"
+                    id="txtEmail"
+                    size="20"
+                    placeholder="Digite seu email">
+                </div>
+
+                <div>Idade:
+                    <input type="number"
+                    min="15"
+                    max="40"
+                    placeholder="Idade entre 15 e 40">
+                </div>
+
+                <div>Data de Nascimento:
+                    <input type="date">
+                </div>
+
+                <div>Sexo: 
+                    <input type="radio" 
+                           name="nSexo"                 
+                           id="radioMasc"
+                           value="M">
+
+                    <label for="radioMasc">Masculino</label>
+
+                    <input type="radio" 
+                            checked
+                           name="nSexo"
+                           id="radioFem"
+                           value="F">
+
+                    <label for="radioFem">Feminino</label>
+
+                </div>
+                <div>Estado:
+                    <select name="nEstado" id="dropEstado">
+
+                        <optgroup label="Região Sudeste"></option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">São Paulo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sul">
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC" selected>Santa Catarina</option>
+                        </optgroup>
+                        
+                    </select>
+                </div>
+
+                <div>Cidade:
+                    <input type="text"
+                        name="nCidade" id="txtCidade"
+                        list="listCidades">
+
+                    <dataList id="listCidades">
+                        <option value="Rio de Janeiro"></option>
+                        <option value="Araraquara"></option>
+                        <option value="São Carlos"></option>
+                        <option value="Ibaté"></option>
+                        <option value="Rio Claro"></option>
+                    </dataList>
+
+                </div>
+                <div>Fale sobre você:
+                    
+                    <textarea name="nFale"
+                            id="txtFale"
+                            cols="45"
+                            rows="6"
+                            placeholder="Fale sobre você">
+                    </textarea>
+
+                </div>
+                <div>Cor da camiseta:
+                    <input type="color"
+                            name="nCor"
+                            id="escolheCor"
+                            value="#0000FF" >
+                </div>
+                <div>Nível de conhecimento de inglês:
+                    baixo <input type="range"
+                        min="0"
+                        max="10"
+                        step="2"> alto
+                </div>
+                
+                <div>
+                    <input type="checkbox" 
+                           name="nNoticias" 
+                           id="chkNoticias"
+                           checked >
+                    Quero receber emails com notícias
+                </div>
+
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="APAGAR">
+
+                <input type="image" src="./botaosalvar.png" width="150">
+
+            </fieldset>
+        </form>
+    </body>
+
+</html>
+
